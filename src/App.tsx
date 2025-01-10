@@ -4,30 +4,33 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState("0")
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div id="app">
+        <div className="calculadora">
+          <p>0</p>
+          <button className="divisor2">%</button>
+          <button className="divisor">/</button>
+          <button className="multiplication">*</button>
+          <button className="resta">-</button>
+          <button className="seven">7</button>
+          <button className="eight">8</button>
+          <button className="nine">9</button>
+          <button className="sum">+</button>
+          <button className="six">6</button>
+          <button className="five">5</button>
+          <button className="four">4</button>
+          <button className="three">3</button>
+          <button className="two">2</button>
+          <button className="one">1</button>
+          <button className="solution">=</button>
+          <button className="cero">0</button>
+          <button className="coma">,</button>
+        </div>
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
