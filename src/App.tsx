@@ -6,12 +6,11 @@ function App() {
 
   function append(number: string) {
     console.log(count);
-    if (count.match("0") == null) {
-      console.log("a");
-      setCount(count + number);
+    if (count === "0") {
+      setCount("" + number);
     } else {
       console.log("b");
-      setCount("" + number);
+      setCount(count + number);
     }
     
   }
