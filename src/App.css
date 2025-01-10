@@ -34,3 +34,6 @@
 .solution {
   grid-row: span 2;
 }
+.deleteall {
+  grid-column: span 4;
+}
