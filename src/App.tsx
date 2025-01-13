@@ -28,6 +28,8 @@ function App() {
       <div id="app">
         <div className="calculadora">
           <p>{ count }</p>
+          <button className="abreparentesis" onClick={() => append('(')}>(</button>
+          <button className="cierraparentesis" onClick={() => append(')')}>)</button>
           <button className="divisor2" onClick={() => append('%')}>%</button>
           <button className="divisor" onClick={() => append('/')}>/</button>
           <button className="multiplication" onClick={() => append('*')}>*</button>

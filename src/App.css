@@ -37,3 +37,11 @@
 .deleteall {
   grid-column: span 4;
 }
+
+.abreparentesis {
+  grid-column: span 2;
+}
+
+.cierraparentesis {
+  grid-column: span 2;
+}
